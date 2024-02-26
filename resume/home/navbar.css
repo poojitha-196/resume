@@ -1,0 +1,28 @@
+body {
+    height: 100%;
+    background-size: cover;
+}
+.photo1{
+    text-align: center;
+}
+.photo1 h4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+   
+}
+.photo1 img{
+    height: 400px;
+   margin-top:2%;
+   
+}
+.ab{
+    text-align: center;
+
+}
+.ab .fab{
+    font-size: 30px;
+}
+.ab .fa-github{
+    margin-left: 25px;
+    
+}

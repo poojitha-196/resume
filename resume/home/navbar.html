@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="../contact/cantact.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+  <title>POOJITHA RESUME</title>
+  <style>
+    .photo1 {
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 4%;
+    }
+
+    .photo1 img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .ab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ab .social-link {
+  margin: 0 5px;
+  font-size: 24px;
+  color: white;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.ab .social-link:hover {
+  opacity: 1;
+}
+
+
+    body {
+      height: 100%;
+      overflow: hidden;
+      transition: background-color 0.5s;
+      background: linear-gradient(to bottom, #000000, #000033) no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    body:hover {
+      background: linear-gradient(to bottom, #000033, #000000) no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* Magneto particle animation */
+    .particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .particle {
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      background-color: white;
+      border-radius: 50%;
+      opacity: 0;
+      animation: particleAnim 2s linear infinite;
+    }
+
+    @keyframes particleAnim {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    /* Responsive styles */
+    @media (max-width: 576px) {
+      .photo1 img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .photo1 {
+        margin-top: 50px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .photo1 {
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../home/navbar.html">NALLAMADUGULA POOJITHA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../about/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../education/education.html">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../skills/skills.html">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contact/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><br>
+  <div class="photo1">
+    <img src="c:\Users\dell\Downloads\WhatsApp Image 2024-02-24 at 7.36.46 AM.jpeg" alt="hjhfj"><br>
+    <h3 style="color:white">NALLAMADUGULA POOJITHA</h3>
+    <h4 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:white;">UI/UX  Trainee</h4>
+    <h4 style="color: white;"><span id="profession">I am </span><span id="professionType"></span></h4>
+  </div>
+  
+  <div class="particles"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      createParticles();
+      startBackTyping();
+    });
+
+    function createParticles() {
+      var particleContainer = document.querySelector(".particles");
+
+      for (var i = 0; i < 100; i++) {
+        var particle = document.createElement("span");
+        particle.classList.add("particle");
+        particle.style.left = Math.random() * 100 + "%";
+        particle.style.top = Math.random() * 100 + "%";
+        particle.style.animationDelay = Math.random() + "s";
+        particleContainer.appendChild(particle);
+      }
+    }
+
+    function startBackTyping() {
+      var professions = ["Programmer", "Developer", "Web Designer"];
+      var professionIndex = 0;
+      var professionElement = document.getElementById("professionType");
+
+      function backTypeProfession() {
+        professionElement.textContent = professions[professionIndex];
+        professionIndex++;
+        if (professionIndex >= professions.length) {
+          professionIndex = 0;
+        }
+      }
+
+      setInterval(backTypeProfession, 2000);
+    }
+  </script>
+</body>
+</html>
+
